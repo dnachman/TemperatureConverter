@@ -5,6 +5,8 @@
     <string name="action_settings">Settings</string>
     <string name="enter_temperature">Enter the temperature</string>
     <string name="button_convert">Convert</string>
-    <string name="radio_fahrenheit">Fahrenheit</string>
-    <string name="radio_celsius">Celsius</string>
+    <string name="radio_fahrenheit">to Fahrenheit</string>
+    <string name="radio_celsius">to Celsius</string>
+    <string name="format_fahrenheit">%1$.1f \u2109</string>
+    <string name="format_celsius">%1$.1f \u2103</string>
 </resources>

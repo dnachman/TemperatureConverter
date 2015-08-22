@@ -4,21 +4,17 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical"
                 tools:context=".MainActivity"
-              android:gravity="center">
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/enter_temperature"
-        android:id="@+id/textView"/>
+              android:gravity="top|center">
 
     <EditText
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="number"
         android:ems="10"
         android:id="@+id/edit_temperature"
-        android:layout_gravity="center_horizontal"/>
+        android:layout_gravity="center_horizontal"
+        android:hint="@string/enter_temperature"
+        android:textAlignment="center"/>
 
     <RadioGroup
         android:layout_width="wrap_content"
@@ -28,13 +24,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/radio_fahrenheit"
-            android:id="@+id/radioButton"/>
+            android:id="@+id/radio_fahrenheit"
+            android:checked="false"/>
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/radio_celsius"
-            android:id="@+id/radioButton2"/>
+            android:id="@+id/radio_celsius"
+            android:checked="true"/>
 
     </RadioGroup>
 
@@ -49,7 +47,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Large Text"
         android:id="@+id/text_converted"
         android:layout_gravity="center_horizontal"
         android:paddingTop="16dp"/>
